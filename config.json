@@ -1,0 +1,35 @@
+{
+  "host": "play.arctixmc.net",
+  "port": 25565,
+  "username": "Getosea",
+  "owner": "AgentNP",
+  "prefix": "!",
+  "version": false,
+  "auth": "offline",
+  "reconnectDelayMs": 5000,
+  "webPort": 3000,
+  "antiAfk": {
+    "enabled": true,
+    "minIntervalMs": 15000,
+    "maxIntervalMs": 30000
+  },
+  "antiBot": {
+    "enabled": true,
+    "minDelayMs": 2000,
+    "maxDelayMs": 5000,
+    "minMoveDelayMs": 1000,
+    "maxMoveDelayMs": 3000
+  },
+  "joinSequence": {
+    "enabled": true,
+    "password": "haha1223",
+    "registerCommand": "/register {password} {password}",
+    "loginCommand": "/login {password}",
+    "afterLoginCommands": [
+      "/server survival",
+      "/warp afk"
+    ],
+    "initialDelayMs": 2000,
+    "stepDelayMs": 2500
+  }
+}
